@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/learn_spacing_standard"
+    android:layout_marginBottom="@dimen/learn_spacing_standard"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/learn_walk_1" />
+
+        <View
+            android:id="@+id/viewStatus"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/learn_circle_dot"
+            android:visibility="gone" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textStyle="bold"
+            tools:text="Cruse " />
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/learn_spacing_control"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="@dimen/learn_font_size_medium"
+            tools:text="Economy" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

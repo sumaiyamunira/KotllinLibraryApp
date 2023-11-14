@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/learn_layout_background"
+    android:orientation="vertical"
+    tools:context=".activities.MeetingReservationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/learn_spacing_middle"
+            android:padding="@dimen/learn_spacing_medium"
+            android:src="@drawable/learn_ic_back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvMyCourse"
+        style="@style/LearnHeadingBig"
+        android:layout_marginStart="@dimen/learn_spacing_standard_new"
+        android:layout_marginTop="@dimen/learn_spacing_middle"
+        android:text="Reservation"
+        android:textSize="@dimen/learn_font_size_xxxlarge"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/learn_spacing_standard"
+            android:background="@drawable/learn_shadoe"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/cp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+                    android:id="@+id/ivMeetingImage"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/meeting_room1" />
+
+                <TextView
+                    android:id="@+id/tvRoomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/learn_spacing_large"
+                    android:layout_marginTop="@dimen/learn_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/learn_spacing_large"
+                    android:gravity="center"
+                    android:textAppearance="@style/LearnerFontBold"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/learn_spacing_large"
+                    android:layout_marginTop="@dimen/learn_spacing_small"
+                    android:layout_marginEnd="@dimen/learn_spacing_large"
+                    android:gravity="center"
+                    android:textColor="@color/learn_textColorSecondary"
+                    android:textSize="@dimen/learn_font_size_small"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/learn_spacing_large"
+                    android:layout_marginTop="@dimen/learn_spacing_middle"
+                    android:layout_marginEnd="@dimen/learn_spacing_large"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirm"
+                    style="@style/LearnerMaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/learn_spacing_large"
+                    android:paddingStart="@dimen/learn_spacing_xxlarge"
+                    android:paddingTop="@dimen/learn_spacing_middle"
+                    android:paddingEnd="@dimen/learn_spacing_xxlarge"
+                    android:paddingBottom="@dimen/learn_spacing_middle"
+                    android:text="Confirm" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/tvNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you to cancel?"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="@dimen/learn_font_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tvCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="Cancel"
+                        android:textAppearance="@style/LearnerFontSemiBold"
+                        android:textColor="@color/learn_colorPrimary"
+                        android:textSize="@dimen/learn_font_size_medium" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+

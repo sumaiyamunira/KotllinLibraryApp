@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_main_holder"
+    android:clickable="true"
+    android:layout_marginBottom="@dimen/learn_spacing_standard"
+    android:background="@drawable/learn_shadoe"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/meeting_room_name"
+            style="@style/LearnHeadingBig"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textStyle="bold"
+            tools:text="09:30 - 10:00" />
+
+        <TextView
+            android:id="@+id/meeting_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meeting_room_name"
+            android:layout_marginEnd="@dimen/learn_spacing_large"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/learn_spacing_control_half"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="@dimen/learn_font_size_medium"
+            tools:text="18th October 2023" />
+
+
+        <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+            android:id="@+id/meeting_room_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/meeting_room1" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meeting_room_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/meeting_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/learn_bg_ract_4dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/learn_spacing_standard"
+                android:paddingTop="@dimen/learn_spacing_control"
+                android:paddingEnd="@dimen/learn_spacing_standard"
+                android:paddingBottom="@dimen/learn_spacing_control"
+                android:singleLine="true"
+                android:text="MTF001"
+                android:textAppearance="@style/LearnerFontSemiBold"
+                android:textColor="@color/learn_white"
+                android:textSize="@dimen/learn_font_size_small"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_toLeftOf="@+id/meeting_room_img"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_below="@id/meeting_date_time"
+            android:layout_marginTop="@dimen/learn_spacing_standard"
+            android:background="@color/learn_gradient_grey_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvcapacity"
+                    style="@style/LearnHeadingBig"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/learn_font_size_normal"
+                    android:textStyle="bold"
+                    tools:text="05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Capacity"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorSecondary"
+                    android:textSize="@dimen/learn_font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvwhiteboard"
+                    style="@style/LearnHeadingBig"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/learn_font_size_normal"
+                    android:textStyle="bold"
+                    tools:text="Yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Board"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorSecondary"
+                    android:textSize="@dimen/learn_font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvmultimedia"
+                    style="@style/LearnHeadingBig"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/learn_font_size_normal"
+                    android:textStyle="bold"
+                    tools:text="Yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Multimedia"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorSecondary"
+                    android:textSize="@dimen/learn_font_size_small" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

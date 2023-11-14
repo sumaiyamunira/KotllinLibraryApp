@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/learn_spacing_middle"
+        android:layout_marginTop="@dimen/learn_spacing_standard_new"
+        android:layout_marginStart="@dimen/learn_spacing_standard"
+        android:layout_marginEnd="@dimen/learn_spacing_standard"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="@dimen/learn_spacing_standard"
+        android:layout_marginBottom="@dimen/learn_spacing_middle"
+        >
+        <ImageView
+            android:id="@+id/imgWalk1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/learn_walk_1" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/tvFeatureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/cardImg"
+        android:layout_below="@id/cardImg"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/learn_font_size_medium"
+        android:textColor="@color/learn_textColorPrimary"
+        android:textAppearance="@style/LearnerFontMedium"
+        android:layout_marginStart="@dimen/learn_spacing_standard"
+        tools:text="Business management" />
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvFeatureName"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/learn_font_size_medium"
+        android:textColor="@color/learn_textColorPrimary"
+        android:textAppearance="@style/LearnerFontBold"
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:layout_marginStart="@dimen/learn_spacing_standard"
+        tools:text="$90" />
+    <TextView
+        android:id="@+id/tvStrikePrice"
+        android:layout_toEndOf="@id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cardImg"
+        android:layout_alignBottom="@id/tvPrice"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/learn_font_size_small"
+        android:textColor="@color/learn_textColorThird"
+        android:textAppearance="@style/LearnerFontMedium"
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:layout_marginStart="@dimen/learn_spacing_control_half"
+        tools:text="$90" />
+
+
+
+</RelativeLayout>

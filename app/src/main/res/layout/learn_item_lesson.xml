@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_240sdp"
+    android:background="@drawable/learn_shadoe"
+    android:layout_marginEnd="@dimen/learn_spacing_standard"
+    android:layout_height="@dimen/_350sdp">
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/cp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cp"
+        android:src="@drawable/learen_walk_bg"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+            android:id="@+id/ivPeople"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/learn_green_image"
+            />
+        <TextView
+            android:id="@+id/tvFeatureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/learn_spacing_standard_new"
+            android:textSize="@dimen/learn_font_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textAppearance="@style/LearnerFontBold"
+            android:layout_marginStart="@dimen/learn_spacing_large"
+            android:layout_marginEnd="@dimen/learn_spacing_large"
+            android:text="@string/learn_lbl_introduction" />
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/learn_spacing_standard"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorThird"
+            android:layout_marginStart="@dimen/learn_spacing_large"
+            android:layout_marginEnd="@dimen/learn_spacing_large"
+            android:text="@string/learn_lbl_article" />
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/learn_spacing_middle"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:lines="3"
+            android:layout_marginStart="@dimen/learn_spacing_large"
+            android:layout_marginEnd="@dimen/learn_spacing_large" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_lbl_started"
+            android:layout_marginTop="@dimen/learn_spacing_large"
+            android:paddingTop="@dimen/learn_spacing_middle"
+            android:paddingBottom="@dimen/learn_spacing_middle"
+            android:paddingStart="@dimen/learn_spacing_xxlarge"
+            android:paddingEnd="@dimen/learn_spacing_xxlarge"
+            style="@style/LearnerMaterialButtonStyle.Filled" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

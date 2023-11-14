@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.ServiceUniLibrary" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/learn_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/learn_colorPrimaryDark</item>
+        <item name="colorAccent">@color/learn_colorAccent</item>
+    </style>
+</resources>

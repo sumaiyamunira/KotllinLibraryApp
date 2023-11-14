@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/imgWalk2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/learn_transparent"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:elevation="@dimen/learn_spacing_standard"
+        android:src="@drawable/learn_walk_3" />
+
+    <ImageView
+        android:id="@+id/imgWalk4"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:background="@color/learn_transparent"
+        android:elevation="@dimen/learn_spacing_standard"
+        android:src="@drawable/learn_walk_telescope" />
+
+
+
+
+
+</RelativeLayout>

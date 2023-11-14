@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LearnLoginActivity">
+    <TextView
+        android:id="@+id/tvMyCourse"
+        style="@style/LearnHeadingBig"
+        android:layout_marginStart="@dimen/learn_spacing_standard_new"
+        android:layout_marginTop="@dimen/learn_spacing_large"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="@string/learn_lbl_my_courses" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tabCourses"
+        android:layout_below="@id/tvMyCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/learn_spacing_standard_new"
+        android:layout_marginTop="@dimen/learn_spacing_standard_new">
+        <TextView
+            android:id="@+id/tvAll"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+          style="@style/TabTextStyle"
+            android:textColor="@color/learn_colorPrimary"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:text="@string/learn_lbl_all" />
+        <TextView
+            android:id="@+id/tvOngoing"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAll"
+            style="@style/TabTextStyle"
+            android:layout_marginStart="@dimen/learn_spacing_xlarge"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:text="@string/learn_lbl_ongoing" />
+        <TextView
+            android:id="@+id/tvCompleted"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvOngoing"
+           style="@style/TabTextStyle"
+            android:layout_marginStart="@dimen/learn_spacing_xlarge"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:text="@string/learn_lbl_completed" />
+        <View
+            android:id="@+id/tab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvAll"
+            app:layout_constraintStart_toStartOf="@id/tvAll"
+            app:layout_constraintEnd_toEndOf="@id/tvAll"
+            android:background="@color/learn_colorPrimary" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabCourses"
+        android:paddingTop="@dimen/learn_spacing_standard_new"
+        android:paddingBottom="@dimen/_50sdp"
+        android:paddingStart="@dimen/learn_spacing_middle"
+        android:paddingEnd="@dimen/learn_spacing_middle"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/learn_spacing_standard"
+    android:layout_marginBottom="@dimen/learn_spacing_standard">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/learn_walk_1"
+            android:layout_marginStart="@dimen/learn_spacing_control"
+            />
+        <View
+            android:id="@+id/viewStatus"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/learn_circle_dot"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textStyle="bold"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:text="@string/learn_lbl_hannah_tran"/>
+        <TextView
+            android:id="@+id/tvChatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/learn_spacing_control"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="@dimen/learn_font_size_medium"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            tools:text="Hi Hannah ,Good morning!"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

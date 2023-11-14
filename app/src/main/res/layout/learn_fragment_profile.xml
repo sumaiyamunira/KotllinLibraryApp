@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_50sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_standard_new"
+            android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+            android:layout_marginBottom="@dimen/learn_spacing_standard_new">
+
+            <com.sumaiyamunira.serviceunilibrary.utils.LearnerCircleImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/learn_spacing_control"
+                android:padding="@dimen/learn_spacing_control_half"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/learn_white"
+                app:civ_border_width="@dimen/learn_spacing_control_half" />
+
+            <TextView
+                android:id="@+id/tvfullname"
+                style="@style/LearnHeadingBig"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toEndOf="@id/ivProfile"
+                android:text="Full Name"
+                android:textSize="@dimen/learn_font_size_xlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvfullname"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginEnd="@dimen/learn_font_size_large"
+                android:layout_toEndOf="@id/ivProfile"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/learn_spacing_control_half"
+                android:text="user@examplemail.edu.au"
+                android:textAppearance="@style/LearnerFontSemiBold"
+                android:textColor="@color/learn_textColorSecondary"
+                android:textSize="@dimen/learn_font_size_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control"
+                android:layout_toEndOf="@id/ivProfile">
+
+                <ImageView
+                    android:id="@+id/ivMedal1"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:background="@drawable/learn_bg_circle_white"
+                    android:backgroundTint="@color/learn_colorPrimary"
+                    android:paddingTop="@dimen/learn_spacing_control_half"
+                    android:paddingBottom="@dimen/learn_spacing_standard"
+                    android:src="@drawable/learn_ic_medal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivMedal2"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_marginStart="@dimen/learn_spacing_medium"
+                    android:background="@drawable/learn_bg_circle_white"
+                    android:backgroundTint="@color/learn_light_green"
+                    android:padding="@dimen/learn_spacing_medium"
+                    android:paddingTop="@dimen/learn_spacing_control_half"
+                    android:src="@drawable/learn_ic_crown"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivMedal3"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_marginStart="@dimen/learn_spacing_medium"
+                    android:background="@drawable/learn_bg_circle_white"
+                    android:backgroundTint="@color/learn_light_pink"
+                    android:padding="@dimen/learn_spacing_medium"
+                    android:paddingTop="@dimen/learn_spacing_control_half"
+                    android:src="@drawable/learn_ic_cup"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivMedal4"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_marginStart="@dimen/learn_spacing_medium"
+                    android:background="@drawable/learn_bg_circle_white"
+                    android:backgroundTint="@color/learn_light_red"
+                    android:padding="@dimen/learn_spacing_medium"
+                    android:src="@drawable/learn_ic_flag"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlHead"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_standard"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:gravity="center_vertical"
+            android:padding="@dimen/learn_spacing_control_half"
+            android:text="@string/learn_lbl_general"
+            android:textAllCaps="true"
+            android:textAppearance="@style/LearnerFontBold"
+            android:textColor="@color/learn_textColorGrey"
+            android:textSize="@dimen/learn_font_size_small"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGeneral"
+            android:layout_marginTop="@dimen/learn_spacing_middle"
+            android:background="@color/learn_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llFavourites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_like" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="@string/learn_lbl_favourite_courses"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@color/learn_gradient_grey_1" />
+
+            <LinearLayout
+                android:id="@+id/llMyFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/learn_ic_user"
+                    android:tint="@color/learn_colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="@string/learn_lbl_book_consultation"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@color/learn_gradient_grey_1"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llAchievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginBottom="@dimen/learn_spacing_control"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/learn_ic_flag" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="Reading Goals"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llGeneral"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_standard_new"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:gravity="center_vertical"
+            android:padding="@dimen/learn_spacing_control_half"
+            android:text="@string/learn_lbl_settings"
+            android:textAllCaps="true"
+            android:textAppearance="@style/LearnerFontBold"
+            android:textColor="@color/learn_textColorGrey"
+            android:textSize="@dimen/learn_font_size_small"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSettings"
+            android:layout_marginTop="@dimen/learn_spacing_middle"
+            android:layout_marginBottom="@dimen/learn_spacing_xxxlarge"
+            android:background="@color/learn_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="@string/learn_lbl_edit_login_details"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@color/learn_gradient_grey_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_14sdp"
+                    android:src="@drawable/learn_ic_check_mark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="@string/learn_lbl_update_interests"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@color/learn_gradient_grey_1" />
+
+            <LinearLayout
+                android:id="@+id/id_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginBottom="@dimen/learn_spacing_control"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/baseline_logout_24"
+                    android:tint="@color/learn_colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="@string/log_out"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="@dimen/learn_font_size_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
