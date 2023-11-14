@@ -16,11 +16,11 @@ This is a mobile app project developed in Kotlin for the Android platform. The a
   
 ## Screenshots
 
-![Welcome Screen](screenshots/welcome.png){:width="500" height="300"}
-![Login Screen](screenshots/login.png){:width="500" height="300"}
-![Home Tabs](screenshots/home.png){:width="500" height="300"}
-![Book Meeting Room](screenshots/meeting_room_booking.png){:width="500" height="300"}
-![My Books](screenshots/my_books.png){:width="500" height="300"}
+![Welcome Screen](screenshots/welcome.png)
+![Login Screen](screenshots/login.png)
+![Home Tabs](screenshots/home.png)
+![Book Meeting Room](screenshots/meeting_room_booking.png)
+![My Books](screenshots/my_books.png)
 
 
 
