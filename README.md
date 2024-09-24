@@ -26,7 +26,7 @@ This is a mobile app project developed in Kotlin for the Android platform. The a
 
 ## Features
 
-- Welcoming welcome screen.
+- Welcoming screen.
 - Secure login with password validation. (Example login: student2, password: 123456)
 - Intuitive bottom navigation with home, search, my books, and more tabs.
 - Meeting room tab for viewing booked rooms.
